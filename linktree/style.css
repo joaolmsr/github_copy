@@ -1,0 +1,50 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+img {
+  border-radius: 75px;
+  animation: bounce 2s infinite;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+body {
+  background: linear-gradient(to right, rgb(0, 13, 82), rgb(0, 94, 125));
+  color: white;
+  font-family: 'Trebuchet MS';
+  text-align: center;
+  padding-top: 40px;
+}
+
+a {
+  background-color: white;
+  font-size: 20px;
+  border-radius:10px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px;
+  color: slateblue;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  width: 300px;
+}
+
+a:hover {
+  color: white;
+  background-color: slateblue;
+  transform: scale(1.05);
+}
